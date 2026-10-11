@@ -1,16 +1,16 @@
-# md-render
+# local-md-render
 
 Local viewer for every markdown file under a folder. No dependencies to install.
 
 ```bash
-npx md-render                  # scans the current folder, opens http://localhost:4321
-npx md-render ~/notes          # scan a different folder
-npx md-render --port 5000      # different port (default 4321; the next free one if it's taken)
-npx md-render --no-open        # don't open the browser
-npx md-render --host 0.0.0.0   # share on your network (default: localhost only)
+npx local-md-render                  # scans the current folder, opens http://localhost:4321
+npx local-md-render ~/notes          # scan a different folder
+npx local-md-render --port 5000      # different port (default 4321; the next free one if it's taken)
+npx local-md-render --no-open        # don't open the browser
+npx local-md-render --host 0.0.0.0   # share on your network (default: localhost only)
 ```
 
-Or install it globally with `npm i -g md-render` and run `md-render`. From a clone of this repo, run `npm start` or `node server.js [dir]`.
+Or install it globally with `npm i -g local-md-render` and run `local-md-render`. From a clone of this repo, run `npm start` or `node server.js [dir]`.
 
 On start it recursively finds `.md` / `.markdown` / `.mdx` files, skipping `node_modules`, `.git`, `dist`, `build`, `coverage`, `vendor` and similar folders. It watches for changes and live-reloads the open file. Use ⟳ to rescan.
 

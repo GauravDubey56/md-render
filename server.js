@@ -2,8 +2,8 @@
 // Zero-dependency server: scans a root folder recursively for .md files on
 // start and serves a browser viewer for them.
 //
-//   npx md-render [rootDir] [--port 4321] [--host 127.0.0.1] [--no-open]
-//   PORT=4321 MD_ROOT=/some/dir md-render
+//   npx local-md-render [rootDir] [--port 4321] [--host 127.0.0.1] [--no-open]
+//   PORT=4321 MD_ROOT=/some/dir local-md-render
 
 const http = require('http');
 const fs = require('fs');
@@ -11,7 +11,7 @@ const fsp = require('fs/promises');
 const path = require('path');
 const { execFile } = require('child_process');
 
-const HELP = `Usage: md-render [rootDir] [options]
+const HELP = `Usage: local-md-render [rootDir] [options]
 
 Serves every .md / .markdown / .mdx file under rootDir (default: current
 directory) in a browser viewer with live reload.
