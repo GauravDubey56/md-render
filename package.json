@@ -1,0 +1,22 @@
+{
+  "name": "md-render",
+  "version": "1.0.0",
+  "description": "Local viewer for every .md file under a folder, with copy-to-docs for text, tables and diagrams",
+  "keywords": ["markdown", "viewer", "preview", "mermaid", "cli", "live-reload"],
+  "license": "MIT",
+  "author": "Gaurav Dubey",
+  "main": "server.js",
+  "bin": {
+    "md-render": "server.js"
+  },
+  "files": [
+    "server.js",
+    "public/"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
